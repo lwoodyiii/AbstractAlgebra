@@ -1,10 +1,14 @@
+import logging
 from Group import Group
 
 def main():
-    print("Hello World")
+    logging.basicConfig(level=logging.INFO)
+    logging.info("basic logging")
+    
     g = Group()
     a = g.Op(2+1j,2+5j)
     print (a)
+
 
 
 
