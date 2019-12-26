@@ -3,5 +3,4 @@ class Group:
         self._G = {0 + 0j, 1}
 
     def Op(self, a, b):
-        return a * b
-        
+        return a + b
