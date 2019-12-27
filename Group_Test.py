@@ -1,17 +1,22 @@
 #Testing an Abelian Group of in C
 from Group import Group
-
-def init():
+a = 1
+b = 2
+c  = 3
+g = Group()
+""" def init():
     s = set()
     for i in range(10000):
         s.add(i+1)
     g = Group(s)
-    return g
+    return g """
+
+@classmethod
+def setup_class():
+    
+    g = Group(s)
 
 def test_closure():
-    g = init()
-    a = g.pop()
-    b = g.pop()
     assert a * b in g
 
 def test_associativity():

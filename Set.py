@@ -1,5 +1,4 @@
 class Set:
-
     def __init__(self, s):
         super().__init__()
         self.elements = s

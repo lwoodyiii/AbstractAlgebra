@@ -1,9 +1,9 @@
 from Set import Set
 
 class Group(Set):
-    def __init__(self, s):
-        super().__init__(s)
-        self.identity = 1
+    def __init__(self):
+        super().__init__()
+        self.identity
 
     def inv(self, x): pass
         

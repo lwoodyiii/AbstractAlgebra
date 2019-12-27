@@ -1,3 +1,8 @@
 {
-  "Group_Test.py": true
+  "Group_Test.py::test_associativity": true,
+  "Group_Test.py::test_closure": true,
+  "Group_Test.py::test_commutativity": true,
+  "Group_Test.py::test_distributivity": true,
+  "Group_Test.py::test_identity": true,
+  "Group_Test.py::test_inverse": true
 }
