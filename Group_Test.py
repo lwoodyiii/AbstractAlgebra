@@ -1,41 +1,27 @@
-#Testing an Abelian Group of in C
+# Testing an Abelian Group of in C
+
 from Group import Group
-a = 1
-b = 2
-c  = 3
+import random
+
+# Global variables
 g = Group()
-""" def init():
-    s = set()
-    for i in range(10000):
-        s.add(i+1)
-    g = Group(s)
-    return g """
+a = random.sample(g.elements, 1)[0]
+b = random.sample(g.elements, 1)[0]
+c = random.sample(g.elements, 1)[0]
 
 @classmethod
-def setup_class():
-    
-    g = Group(s)
+def setup_class(): pass
 
 def test_closure():
     assert a * b in g
 
 def test_associativity():
-    g = init()
-    a = g.pop()
-    print(a)
-    b = g.pop()
-    print(b)
-    c = g.pop()
     assert a * (b * c) == (a * b) * c
 
 def test_identity():
-    g = init()
-    a = g.pop()
     assert a * g.identity == a
 
 def test_inverse():
-    g = init()
-    a = g.pop()
     def myInv(x):
         return 1/x
     g.inv = myInv
@@ -43,15 +29,6 @@ def test_inverse():
 
 #Only an Abelian Group must be commutative
 def test_commutativity():
-    g = init()
-    a = g.pop()
-    b = g.pop()
     assert a + b == b + a
 
-# Test for a Field
-def test_distributivity():
-    g = init()
-    a = g.pop()
-    b = g.pop()
-    c = g.pop()
-    assert a * (b + c) == a*b + a*c
+
