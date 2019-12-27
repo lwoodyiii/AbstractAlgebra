@@ -1,6 +1,3 @@
 [
-  "main_test.py::test_closure",
-  "main_test.py::test_associativity",
-  "main_test.py::test_identity",
-  "main_test.py::test_inverse"
+  "Group_Test.py::test_distributivity"
 ]

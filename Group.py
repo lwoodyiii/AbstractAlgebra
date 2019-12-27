@@ -1,6 +1,10 @@
-class Group:
-    def __init__(self):
-        self._G = {0 + 0j, 1}
+from Set import Set
 
-    def Op(self, a, b):
-        return a + b
+class Group(Set):
+    def __init__(self, s):
+        super().__init__(s)
+        self.identity = 1
+
+    def inv(self, x): pass
+        
+    
