@@ -23,7 +23,7 @@ def test_identity():
 
 def test_inverse():
     def myInv(x):
-        return 1/x
+        return x**-1
     g.inv = myInv
     assert a * g.inv(a) == g.identity
 

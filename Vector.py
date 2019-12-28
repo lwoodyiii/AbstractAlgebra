@@ -17,3 +17,6 @@ class Vector:
     
     def __mul__(self, other):
         return self.multiply(other)
+
+    def __eq__(self, value):
+        return (self.elements == value.elements)

@@ -1,8 +1,9 @@
 class Set:
     def __init__(self):
         s = set()
-        for i in range(1000):
-            s.add(i+1)
+        for i in range(100, -100, -1):
+            for j in range(100, -100, -1):
+                s.add(complex(i,j))
         self.elements = s
         self.infinite_set = True
 
