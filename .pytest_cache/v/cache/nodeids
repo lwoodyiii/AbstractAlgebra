@@ -4,5 +4,6 @@
   "Group_Test.py::test_associativity",
   "Group_Test.py::test_identity",
   "Group_Test.py::test_inverse",
-  "Group_Test.py::test_commutativity"
+  "Group_Test.py::test_commutativity",
+  "Vector_Test.py::test_multiply"
 ]
