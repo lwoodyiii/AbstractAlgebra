@@ -1,22 +1,23 @@
 class Vector:
-    def __init__(self, Tuple):
+    def __init__(self, t):
         super().__init__()
-        self.elements = Tuple
-        self.dim = len(Tuple)
+        self.elements = t
+        self.dim = len(t)
 
-    
-
-    def multiply(self, other):
+    def scalar_multiplication(self, other):
         x = []
         for i in self.elements:
             x.append(i * other)
         return Vector(tuple(x))
-        
+
     def __rmul__(self, other):
-        return self.multiply(other)
+        return self.scalar_multiplication(other)
     
     def __mul__(self, other):
-        return self.multiply(other)
+        return self.scalar_multiplication(other)
 
     def __eq__(self, value):
         return (self.elements == value.elements)
+
+    def __add__(self, other):
+        
