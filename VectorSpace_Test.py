@@ -9,6 +9,7 @@ y = Vector((complex(r(), -r()), complex(r(), -r()))) '''
 a = complex(12,13)
 b = complex(15,-1)
 x = Vector(((complex(-1, -3)), complex(3 , 4)))
+y = Vector(((complex(-1, -3)), complex(3 , 4)))
 
 def test_Vectors_Is_An_Abelian_Group(): assert True
 
@@ -34,5 +35,8 @@ def ident(I):
     assert I * x == x
 
 def distrib(a, b, c):
-    assert a *(b + c) == a * b + a * c
+    temp1 = a * (b + c)
+    temp2 = a * b + a * c
+
+    assert a * (b + c) == a * b + a * c
 

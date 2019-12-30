@@ -1,6 +1,1 @@
-{
-  "Group_Test.py::test_inverse": true,
-  "VectorSpace_Test.py::test_distrib_accross_scalars": true,
-  "VectorSpace_Test.py::test_distrib_accross_vectors": true,
-  "Vector_Test.py::test_vector_addition": true
-}
+{}

@@ -5,12 +5,11 @@
   "Group_Test.py::test_identity",
   "Group_Test.py::test_inverse",
   "Group_Test.py::test_commutativity",
-  "Vector_Test.py::test_scalar_multiplication",
-  "Vector_Test.py::test_vector_addition",
-  "Vector_Test.py::test_vector_multiplication",
   "VectorSpace_Test.py::test_Vectors_Is_An_Abelian_Group",
   "VectorSpace_Test.py::test_assoc",
   "VectorSpace_Test.py::test_ident",
   "VectorSpace_Test.py::test_distrib_accross_scalars",
-  "VectorSpace_Test.py::test_distrib_accross_vectors"
+  "VectorSpace_Test.py::test_distrib_accross_vectors",
+  "Vector_Test.py::test_scalar_multiplication",
+  "Vector_Test.py::test_vector_addition"
 ]

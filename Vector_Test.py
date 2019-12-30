@@ -15,12 +15,10 @@ def test_vector_addition():
     test1 = v1 + v2
     test2 = v2 + v1
     ans = Vector((3,6,8))
-    #Need to finish
-    assert True
-'''     assert(test == ans)
+    assert(test1 == ans)
     assert(test2 == ans)
-    assert(test1 == test2) '''
+    assert(test1 == test2) 
 
-def test_vector_multiplication():
+''' def test_vector_multiplication():
     test1 = v1 * v2
-    test2 = v2 * v1
+    test2 = v2 * v1 '''
