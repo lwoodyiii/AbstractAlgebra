@@ -6,6 +6,7 @@ from Vector import Vector
 def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("basic logging")
+    logging.info("basic logging")
     t = (1,2,3)
     v = Vector(t)
     ans = v * 3
